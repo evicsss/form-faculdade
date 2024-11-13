@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://i.pinimg.com/originals/b8/fc/d5/b8fcd5dc21fc41be47ae5ae99c7690f8.gif');
+    background-size: cover;
+    background-position: center; 
+    background-attachment: fixed;
+}
+
+form {
+    background-color: #0000008a;
+    padding: 2rem;
+    width: 50%;
+    max-width: 400px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    color: #fdfdfd;
+    margin-bottom: 0.5rem;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form input[type="date"],
+form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ff0303;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #000000;
+    transition: border-color 0.3s;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form input[type="tel"]:focus,
+form input[type="date"]:focus,
+form textarea:focus {
+    border-color: #000000;
+    outline: none;
+}
+
+.formEnv {
+    background-color: #f3f162;
+    color: #070505;
+    font-size: 1rem;
+    padding: 0.8rem;
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.formEnv:hover {
+    background-color: #ff3535;
+}
+
+@media (max-width: 480px) {
+    form {
+        padding: 1.5rem;
+    }
+}
